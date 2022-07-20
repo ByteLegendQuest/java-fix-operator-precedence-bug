@@ -13,6 +13,9 @@ public class Challenge {
      * as empty string (`""`).
      */
     public static String concatString(String a, String b) {
-        return a == null ? "" : a + b == null ? "" : b;
+        String temp = "";
+        temp += a == null ? "" : a;
+        temp += b == null ? "" : b;
+        return temp;
     }
 }
