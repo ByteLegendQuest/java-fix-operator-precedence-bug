@@ -12,7 +12,7 @@ public class Challenge {
      * `concatString()` concatenates two `String`s. If any string is `null`, it will be considered
      * as empty string (`""`).
      */
-     public static String concatString(String a, String b) {
-        return a == null ? b == null ? "" : b : b == null ? a : a + b;
+    public static String concatString(String a, String b) {
+        return a == null ? "" : a + b == null ? "" : b;
     }
 }
