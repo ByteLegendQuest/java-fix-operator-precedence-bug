@@ -13,17 +13,6 @@ public class Challenge {
      * as empty string (`""`).
      */
     public static String concatString(String a, String b) {
-        if (a == null) {
-            if (b == null) {
-                return "";
-            }
-            return b;
-        }
-        if (a != null) {
-            if (b != null) {
-                return a + b;
-            }
-        }
-        return a;
+        return a == null ? "" : a + b == null ? "" : b;
     }
 }
